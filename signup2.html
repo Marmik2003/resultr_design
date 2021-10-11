@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resultr</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/login.css" rel="stylesheet">
+    <link href="dist/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <h1 class="h1 mb-3">Resultr</h1>
+      <h4 class="h4 mb-3 font-weight-normal">કૃપયા નીચેની વિગતો ભરો...</h4>
+      <label for="teacherName" class="sr-only">શિક્ષકનું નામ</label>
+      <input type="text" id="teacherName" name="teacher_name" class="form-control mb-2" placeholder="શિક્ષકનું નામ" required autofocus />
+      <label for="schoolName" class="sr-only">શાળાનું નામ</label>
+      <input type="text" id="schoolName" name="school_name" class="form-control mb-2" placeholder="શાળાનું નામ" required />
+      <select id="district" class="form-control mb-2" name="district" required>
+          <option value="">-- જિલ્લો --</option>
+      </select>
+      <select id="taluka" class="form-control mb-2" name="taluka" required>
+          <option value="">-- તાલુકો --</option>
+      </select>
+      <label for="crc" class="sr-only">સી. આર. સી.</label>
+      <input type="text" id="crc" name="crc" class="form-control mb-2" placeholder="સી. આર. સી." required />
+      <label for="village" class="sr-only">ગામ</label>
+      <input type="text" id="village" name="village" class="form-control mb-2" placeholder="ગામ" required />
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Continue <i class="fa fa-right"></i></button>
+      <p class="mt-5 mb-3 text-muted">&copy; TheDataBoy <script>document.write(new Date().getFullYear())</script></p>
+    </form>
+  </body>
+</html>
