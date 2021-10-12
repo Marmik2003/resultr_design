@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Resultr</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <a class="navbar-brand" href="#">Resultr</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="container-fluid">
+        <div class="mb-3"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-12 p-2">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-plus-circle"></i> Add Student (Std 6)
+              </div>
+              <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                      <label for="hajariNumber" class="col-sm-3 col-form-label">હાજરી પત્રક નં.</label>
+                      <div class="col-sm-9">
+                        <input type="number" class="form-control" name="attendance_num" id="hajariNumber" min="1" max="200" size="5" placeholder="##" autofocus required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="studentName" class="col-sm-3 col-form-label">વિદ્યાર્થીનું નામ</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="student_name" id="studentName" maxlength="180" placeholder="વિદ્યાર્થીનું નામ" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="gender" class="col-sm-3 col-form-label">Gender</label>
+                        <div class="col-sm-9">
+                          <select name="gender" id="gender" class="form-control" required>
+                              <option value="" selected disabled>-- Boy / Girl --</option>
+                              <option value="Boy">Boy</option>
+                              <option value="Girl">Girl</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cast" class="col-sm-3 col-form-label">જાતિ</label>
+                        <div class="col-sm-9">
+                          <select name="cast" id="cast" class="form-control" required>
+                              <option value="General">General</option>
+                              <option value="O.B.C.">O.B.C.</option>
+                              <option value="S. C.">S. C.</option>
+                              <option value="S. T.">S. T.</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="birth_date_id" class="col-sm-3 col-form-label">જન્મ તારીખ</label>
+                        <div class="col-sm-9">
+                          <input type="date" class="form-control" name="birth_date" id="birth_date_id" placeholder="જન્મ તારીખ" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="attday" class="col-sm-3 col-form-label">હાજર દિવસ</label>
+                        <div class="col-sm-9">
+                          <input type="number" min="10" max="350" size="5" class="form-control" name="attendance_day" id="attday" placeholder="હાજર દિવસ" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="contact_no" class="col-sm-3 col-form-label">સંપર્ક નંબર</label>
+                        <div class="col-sm-9">
+                          <input type="number" min="4200000000" max="9999999999" size="13" class="form-control" name="contact_no" id="contact_no" placeholder="સંપર્ક નંબર" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="address" class="col-sm-3 col-form-label">સરનામું</label>
+                        <div class="col-sm-9">
+                          <textarea class="form-control" name="address" id="address" placeholder="સરનામું" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="grNum" class="col-sm-3 col-form-label">જનરલ રજિસ્ટર નંબર</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="gr_num" id="grNum" maxlength="20" placeholder="જનરલ રજિસ્ટર નંબર">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="adhardisenum" class="col-sm-3 col-form-label">આધાર ડાયસ નંબર</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="aadhar_dise_num" id="adhardisenum" maxlength="20" placeholder="આધાર ડાયસ નંબર">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bankaccnum" class="col-sm-3 col-form-label">બૅંક અકાઉંટ નંબર</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" name="bank_acc_num" id="bankaccnum" maxlength="20" placeholder="બૅંક અકાઉંટ નંબર">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bankName" class="col-sm-3 col-form-label">બૅંકનું નામ</label>
+                        <div class="col-sm-9">
+                          <input type="text" list="bankNames" class="form-control" name="bank_name" id="bankName" maxlength="120" placeholder="બૅંકનું નામ" required>
+                          <datalist id="bankNames">
+                            <option value="Axis Bank">
+                            <option value="State Bank of India">
+                            <option value="Dena Bank">
+                            <option value="Bank of Baroda">
+                          </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bankBranch" class="col-sm-3 col-form-label">બૅંકની શાખા</label>
+                        <div class="col-sm-9">
+                          <input type="text" list="bankBranches" class="form-control" name="bank_name" id="bankBranch" maxlength="120" placeholder="બૅંકની શાખા" required>
+                          <datalist id="bankBranches">
+                            <option value="gadhoda">
+                            <option value="Sahkari Jin">
+                            <option value="Main Branch">
+                          </datalist>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-user-plus"></i> Add Student</button>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 p-2">
+              <div class="card">
+                  <div class="card-header"><i class="fa fa-list"></i> Student List</div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table table-bordered table-hover table-sm">
+                              <thead>
+                                  <tr>
+                                      <th>#</th>
+                                      <th>Student Name</th>
+                                      <th>Gender / Cast</th>
+                                      <th>Days Attended</th>
+                                      <th>Phone / Address</th>
+                                      <th>Action</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="mb-4"></div>
+    <footer class="footer-simple">
+      <p class="ml-2">&copy; TheDataBoy <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>window.jQuery || document.write('<script src="dist/plugins/jquery-slim.min.js"><\/script>')</script>
+    <script src="dist/plugins/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
